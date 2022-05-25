@@ -24,7 +24,7 @@ edge://settings/content/applicationLinks?search=open
     ```
 4. go to venv 
     ```
-    .venv /Scripts/activate.ps1
+    .venv/Scripts/activate.ps1
     ```
 5. Install the requirements
     ```

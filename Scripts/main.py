@@ -22,6 +22,7 @@ class Zoom:
         Course,link,TimeIn,timeOut = self.getCurrMeeting(Meetings)
 
         if link is not None:
+            print(f"\nNext Iteration: {timeOut}")
             wb.open(link)
             notify = ToastNotifier()
             notify.show_toast(Course, f"from {TimeIn} to {timeOut}\nlink: {link}", duration=25, icon_path = "Assets/images/panic.ico")
@@ -58,9 +59,18 @@ def subtractTime(time1, time2):
     time1 = date.combine(dateObj, time1)
     time2 = date.combine(dateObj, time2)
     return time1 - time2
+def clear():
+   # for windows
+   if os.name == 'nt':
+       _ = os.system('cls')
+
+   # for mac and linux
+   else:
+       _ = os.system('clear')
 
 def run(function):
     while True:
+        clear()
         nextTime = function()
         if not isinstance(nextTime, float):
             nextTime = subtractTime(nextTime,getTimeNow())

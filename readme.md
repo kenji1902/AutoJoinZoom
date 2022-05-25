@@ -1,4 +1,14 @@
 # Auto Join Zoom Meetings
+**Allow the browser to open the corresponding app**
+![image](Assets/images/allow.png)
+
+or go to
+
+**Edge**
+```
+edge://settings/content/applicationLinks?search=open
+```
+
 **Install the Requirements and Run**
 1. Install Python
     ```

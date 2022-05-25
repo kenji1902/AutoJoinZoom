@@ -1,5 +1,5 @@
 # Auto Join Zoom Meetings
-**Allow the browser to open the corresponding app**
+**Allow the browser to open the corresponding app (do this to every link)**
 ![image](Assets/images/allow.png)
 
 or go to

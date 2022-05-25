@@ -33,3 +33,11 @@ edge://settings/content/applicationLinks?search=open
 
 **Schedule Excel File**
 - located in Assets/excel/schedule.xlsx, and insert the Meeting requirements
+
+```
+
+░░░░░░███████ ]▄▄▄▄▄▄▄▄▃
+▂▄▅█████████▅▄▃▂
+I███████████████████].
+◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤…
+```

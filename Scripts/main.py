@@ -58,7 +58,6 @@ def subtractTime(time1, time2):
 def run(function):
     while True:
         nextTime = function()
-        print(nextTime)
         if not isinstance(nextTime, float):
             nextTime = subtractTime(nextTime,getTimeNow())
             nextTime = nextTime.total_seconds()

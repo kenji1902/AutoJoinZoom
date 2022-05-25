@@ -7,7 +7,7 @@ import sched
 import time
 from win10toast import ToastNotifier
 
-pd.set_option('display.max_colwidth', -1)
+pd.set_option('display.max_colwidth', None)
 
 class Zoom:
     def __init__(self,schedulePath,sheet):

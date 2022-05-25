@@ -17,6 +17,8 @@ class Zoom:
 
     def joinMeeting(self):
         Meetings = self.loadSchedule()
+        print("\n\nMeetings for Today: ")
+        print(Meetings[['Course','Time_In','Time_Out']])
         Course,link,TimeIn,timeOut = self.getCurrMeeting(Meetings)
 
         if link is not None:
@@ -37,6 +39,8 @@ class Zoom:
         now = date.strptime(now,'%H:%M:%S').time()
         Meetings = Meetings.loc[Meetings['Time_In'] <= now ]
         Meetings = Meetings.loc[Meetings['Time_Out'] > now ]
+        print("\n\n\nCurrent Meeting: ")
+        print(Meetings)
         if not Meetings.empty:
             return (Meetings['Course'].head(1).to_string(index=False),
                     Meetings['Zoom_Link'].head(1).to_string(index=False),

@@ -22,11 +22,15 @@ edge://settings/content/applicationLinks?search=open
     ```
     python -m venv .venv
     ```
-4. Install the requirements
+4. go to venv 
+    ```
+    .venv /Scripts/activate.ps1
+    ```
+5. Install the requirements
     ```
     pip install requirements.txt 
     ```
-5. Run the main Script
+6. Run the main Script
     ```
     python Scripts/main.py
     ```
